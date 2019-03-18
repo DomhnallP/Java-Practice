@@ -1,4 +1,4 @@
-package parallel;
+package parallel_and_distributed;
 
 import java.util.HashMap;
 import java.util.concurrent.Callable;

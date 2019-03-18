@@ -1,4 +1,4 @@
-package parallel; 
+package parallel_and_distributed; 
 
 import java.util.concurrent.ExecutorService; 
 import java.util.concurrent.Executors;

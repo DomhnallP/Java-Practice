@@ -1,4 +1,4 @@
-package parallel;
+package parallel_and_distributed;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class WordReverseClient {
 	static final int MAX_T = 4;      
 	public static void main(String[] args) throws UnknownHostException,
-	IOException, ClassNotFoundException {
+	IOException, ClassNotFoundException, InterruptedException {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("welcome client");
 		Socket socket = new Socket("localhost", 4444);
@@ -20,7 +20,8 @@ public class WordReverseClient {
 		System.out.println("Enter string to reverse:");
 		while (scanner.hasNextLine()) {
             out.println(scanner.nextLine());
-            System.out.println("Recieving info from server ...");
+
+            System.out.println("Receiving info from server ...");
             System.out.println(in.nextLine());
 		}
 	}

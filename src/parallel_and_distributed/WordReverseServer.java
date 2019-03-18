@@ -1,4 +1,4 @@
-package parallel;
+package parallel_and_distributed;
 
 import java.io.IOException;
 import java.io.PrintWriter;
